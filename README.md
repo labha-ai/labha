@@ -101,7 +101,7 @@ npm install -g @anthropic-ai/claude-code
 ### 2. Install Skills
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/labha.git
+git clone https://github.com/labha-ai/labha.git
 cp labha/skills/*.md ~/.claude/commands/
 ```
 
@@ -175,7 +175,7 @@ python3 tools/financial_rigor.py verify-market-cap \
 - [ ] Indian pharma / IT / banking industry deep dives
 - [ ] Real-time data via MCP (NSE live feed)
 - [ ] Historical backtesting vs Nifty returns
-- [ ] SaaS platform (labha.ai)
+- [ ] Web interface
 
 ---
 
