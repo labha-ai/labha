@@ -1,5 +1,10 @@
 # Labha.ai — AI-Powered Value Investing for Indian Markets
 
+[![CI](https://github.com/labha-ai/labha/actions/workflows/ci.yml/badge.svg)](https://github.com/labha-ai/labha/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/labha-ai/labha/graph/badge.svg)](https://codecov.io/gh/labha-ai/labha)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
 > **लाभ (Lābha)** — Sanskrit for *profit, gain*. Also the 11th house in Vedic astrology: the house of gains.
 
 **Labha.ai** is an open-source collection of investment research skills built on [Claude Code](https://claude.ai/code), adapted for Indian markets (NSE/BSE).
@@ -194,3 +199,9 @@ MIT License — free to use, modify, and build upon. See [LICENSE](LICENSE).
 > *"The stock market is a device for transferring money from the impatient to the patient."* — Warren Buffett
 >
 > Labha.ai: Giving every Indian investor their own research team.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=labha-ai/labha&type=Date)](https://star-history.com/#labha-ai/labha&Date)

@@ -1,3 +1,4 @@
+_private/
 logs/
 *.pyc
 __pycache__/
@@ -7,3 +8,6 @@ __pycache__/
 data/*.csv
 data/*.json
 !data/watchlist.json.example
+.coverage
+coverage.xml
+.pytest_cache/
