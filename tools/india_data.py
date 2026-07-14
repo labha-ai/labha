@@ -188,11 +188,12 @@ def cmd_quote(symbol: str, bse: bool = False):
     print(f"  52W High/Low:     ₹{_fmt_num(high_52w)} / ₹{_fmt_num(low_52w)}")
     print()
     print(f"  Market Cap:       {_fmt_inr(market_cap)}")
-    print(f"  Shares Out:       {_fmt_inr(shares, unit='units')} shares" if shares else "  Shares Out:       N/A")
+    print(f"  Shares Out:       {int(shares):,}" if shares else "  Shares Out:       N/A")
     print(f"  P/E (TTM):        {_fmt_num(pe)}")
     print(f"  P/E (Forward):    {_fmt_num(forward_pe)}")
     print(f"  P/B:              {_fmt_num(pb)}")
-    print(f"  Dividend Yield:   {_fmt_pct(dividend_yield * 100) if dividend_yield else 'N/A'}")
+    # yfinance returns dividendYield already in percent (1.04 = 1.04%)
+    print(f"  Dividend Yield:   {_fmt_pct(dividend_yield) if dividend_yield else 'N/A'}")
 
     # Market cap verification
     if price and shares and market_cap:
@@ -345,7 +346,8 @@ def cmd_valuation(symbol: str, bse: bool = False):
     print(f"  EPS (Forward):      ₹{_fmt_num(eps_fwd)}")
     print(f"  ROE:                {_fmt_pct(roe * 100) if roe else 'N/A'}")
     print(f"  FCF Yield:          {_fmt_pct(fcf_yield)}")
-    print(f"  Dividend Yield:     {_fmt_pct(dividend_yield * 100) if dividend_yield else 'N/A'}")
+    # yfinance returns dividendYield already in percent (1.04 = 1.04%)
+    print(f"  Dividend Yield:     {_fmt_pct(dividend_yield) if dividend_yield else 'N/A'}")
     print(f"  Beta:               {_fmt_num(beta)}")
     print(f"\n  Source: Yahoo Finance ({ticker_str})")
     print(f"  Cross-validate P/E and ROE at: screener.in/company/{symbol.upper()}/")
