@@ -61,7 +61,8 @@ _ALIASES = {
     "NTPC":       "NTPC.NS",
     "POWERGRID":  "POWERGRID.NS",
     "COALINDIA":  "COALINDIA.NS",
-    "ZOMATO":     "ZOMATO.NS",
+    "ZOMATO":     "ETERNAL.NS",  # renamed to Eternal Ltd in 2025
+    "ETERNAL":    "ETERNAL.NS",
     "NYKAA":      "NYKAA.NS",
     "PAYTM":      "PAYTM.NS",
     "POLICYBZR":  "POLICYBZR.NS",

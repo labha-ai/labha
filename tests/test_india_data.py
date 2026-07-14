@@ -119,7 +119,9 @@ class TestAliasesIntegrity:
             assert sym in _ALIASES, f"{sym} missing from _ALIASES"
 
     def test_no_duplicate_yf_symbols(self):
-        yf_symbols = list(_ALIASES.values())
+        # Renamed companies keep their old symbol as an alias (e.g. ZOMATO → ETERNAL.NS)
+        known_renames = {"ETERNAL.NS"}
+        yf_symbols = [s for s in _ALIASES.values() if s not in known_renames]
         assert len(yf_symbols) == len(set(yf_symbols)), "Duplicate yfinance symbols found"
 
     def test_alias_keys_are_uppercase(self):
